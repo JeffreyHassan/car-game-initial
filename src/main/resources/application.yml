@@ -1,0 +1,6 @@
+city:
+  provider:
+    file: world-cities_json.json
+
+server:
+  port: 9080
