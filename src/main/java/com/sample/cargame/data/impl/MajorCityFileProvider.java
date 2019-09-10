@@ -19,7 +19,7 @@ import java.util.stream.Collectors;
 import java.util.stream.StreamSupport;
 
 @Service
-@ConditionalOnMissingBean(CityProvider.class)
+@Profile("!test")
 public class MajorCityFileProvider implements CityProvider {
 
     private final ArrayNode cityList;
