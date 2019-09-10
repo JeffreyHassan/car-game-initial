@@ -44,10 +44,6 @@ public class NextCityService {
                 allCities.stream()
                     .collect(Collectors.groupingBy(city -> city.substring(0,1)));
 
-        Map<String, List<String>> lastLetterToListOfCities =
-                allCities.stream()
-                        .collect(Collectors.groupingBy(city -> city.substring(city.length()-1)));
-
         List<String> possibleResponses = firstLetterToListOfCities.get(letterToStartWith);
 
         Set<String> lastLetterOfPossibleResponses = possibleResponses.stream()
