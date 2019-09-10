@@ -7,6 +7,7 @@ import org.eclipse.collections.impl.factory.Lists;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
+import org.springframework.web.client.HttpClientErrorException;
 
 import java.util.*;
 import java.util.function.Function;
